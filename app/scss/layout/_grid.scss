@@ -2,6 +2,10 @@
   width: 59.375rem;
   margin-left: auto;
   margin-right: auto;
+
+  &.vw-100 {
+    width: 100%;
+  }
 }
 
 header {
@@ -31,16 +35,16 @@ header .container {
 }
 
 .hero .container {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 6rem;
+  padding-bottom: 9rem;
   display: flex;
   flex-wrap: nowrap;
-  column-gap: 1.5rem;
+  column-gap: 2.5rem;
   align-items: center;
 }
 
 .hero .container > * {
-  flex: 1 1 50%;
+  flex: 1;
 }
 
 .hero__title {
@@ -57,7 +61,7 @@ header .container {
 .hero__btn {
   padding: 0.625rem 2rem;
   border: 0 solid;
-  border-radius: 0.3125rem;
+  border-radius: 0.5rem;
   color: var(--fc-grey-50);
   background-color: var(--bg-blue-400);
   font-size: 1rem;
@@ -65,7 +69,7 @@ header .container {
 }
 
 .hero__image {
-  padding: 7rem;
+  padding: 6.5rem 0.25rem;
   text-align: center;
   background-color: slategray;
 }
@@ -77,13 +81,13 @@ header .container {
 }
 
 h2 {
-  font-size: 30px;
   margin-bottom: 3rem;
+  font-size: 2rem;
 }
 
 .info-list {
   display: flex;
-  column-gap: 3.125rem;
+  column-gap: 3.75rem;
   justify-content: center;
 }
 
@@ -92,11 +96,75 @@ h2 {
 }
 
 .info__image {
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   font-size: 5rem;
   color: var(--fc-grey-100);
   border: 3px solid var(--bg-blue-400);
   border-radius: 0.5rem;
+}
+
+.quotes {
+  background-color: var(--fc-grey-100);
+}
+
+.quotes .container {
+  padding: 7rem 7rem 5rem 7rem;
+}
+
+.quote__message {
+  margin-bottom: 5px;
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+.quote__author {
+  margin-right: 1.25rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: right;
+}
+
+.call-action {
+  margin-top: 6.5rem;
+  margin-bottom: 6.5rem;
+  padding: 3rem 6.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--fc-grey-50);
+  background-color: var(--bg-blue-400);
+  border-radius: 0.5rem;
+}
+
+.call__text p:first-child {
+  margin-bottom: 0.25rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.call__text p:nth-child(2) {
+  color: var(--fc-grey-100);
+  margin-bottom: 0;
+}
+
+.call__button {
+  height: 2.5rem;
+  padding-right: 2.125rem;
+  padding-left: 2.125rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--fc-grey-50);
+  border: 2px solid var(--fc-grey-50);
+  border-radius: 0.5rem;
+  background-color: var(--bg-blue-400);
+}
+
+footer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  color: var(--fc-grey-100);
+  background-color: var(--bg-slate-700);
 }
